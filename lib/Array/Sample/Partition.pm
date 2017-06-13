@@ -55,11 +55,13 @@ Syntax: sample_partition(\@ary, $n [ , \%opts ]) => list
 
 Options:
 
-=over * pos => bool
+=over
+
+=item * pos => bool
 
 If set to true, will return positions instead of the elements.
 
-=over
+=back
 
 
 =head1 SEE ALSO
