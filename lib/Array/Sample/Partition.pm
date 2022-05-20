@@ -1,13 +1,16 @@
 package Array::Sample::Partition;
 
-# DATE
-# VERSION
-
 use 5.010001;
 use strict;
 use warnings;
 
 use Exporter qw(import);
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
+
 our @EXPORT_OK = qw(sample_partition);
 
 sub sample_partition {
@@ -63,9 +66,15 @@ If set to true, will return positions instead of the elements.
 
 =back
 
+The function takes an array reference (C<\@ary>) and number of samples to take
+(C<$n>). It will first divide the array into C<$n>+1 of (whenever possible)
+equal-sized partitions, leaving an element between partitions, then get the
+elements between the partitions.
+
 
 =head1 SEE ALSO
 
-L<Array::Sample::SysRand>
+Other sampling methods: L<Array::Sample::SysRand>,
+L<Array::Sample::SimpleRandom>.
 
 =cut
